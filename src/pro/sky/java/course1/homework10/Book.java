@@ -5,12 +5,12 @@ import java.util.Objects;
 public class Book {
     private final String bookName;
     private final Author author;
-    private int year;
+    private int releaseYear;
 
-    public Book(String bookName, Author author, int year) {
+    public Book(String bookName, Author author, int releaseYear) {
         this.bookName = bookName;
         this.author = author;
-        this.year = year;
+        this.releaseYear = releaseYear;
     }
 
     public String getBookName() {
@@ -18,25 +18,23 @@ public class Book {
     }
 
     public int getYear() {
-        return year;
+        return releaseYear;
     }
 
-    public void setYear(int year) {
-        this.year = year;
+    public void setYear(int releaseYear) {
+        this.releaseYear = releaseYear;
 
     }
 
     @Override
     public String toString () {
-        return bookName + " " + author.toString() + " " + year;
+        return bookName + " " + author.toString() + " " + releaseYear;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(bookName + author+year);
+        return Objects.hash(bookName + author+releaseYear);
     }
-
-
     }
 
 

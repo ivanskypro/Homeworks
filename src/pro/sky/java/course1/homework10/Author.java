@@ -12,11 +12,11 @@ public class Author {
     }
     public String getFirstName() {
 
-        return this.firstName;
+        return firstName;
     }
     public String getSecondName() {
 
-        return this.secondName;
+        return secondName;
     }
     @Override
     public String toString() {
